@@ -20,6 +20,19 @@ public class FirstClass {                           // [1]
         else
             System.out.println("Gruna");
 
+        String [] movies = new String [] { "Harry Potter", "Lord", "Forest Gump"};
+        String [] books = new String [] {"Wiosna", "Lato", "Zima"};
+
+        String [] stories = new String [3];
+        movies[0] = "Harry Poter";
+        movies[1] = "Lord";
+        movies[2] = "Forest Gump";
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println((i));
+        }
+
+
 
 
 }
