@@ -18,5 +18,7 @@ public class HalloWorld {
         String example = "Hallo from class HalloWord";
         System.out.println(example );
 
+
     }
+
 }

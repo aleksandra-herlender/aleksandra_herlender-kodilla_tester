@@ -16,5 +16,9 @@ public class Badenia {
     System.out.println(catAge);
     System.out.println(treeAccount);
     System.out.println(peopleAccount);
+
+    Breslau wroclaw = new Breslau();
+    System.out.println(wroclaw);
+
     }
 }
