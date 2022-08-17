@@ -21,6 +21,10 @@ public class Main {
         grades.add(4);
         System.out.println(grades.last());
         System.out.println("average="+grades.average());
+
+        for (int age = 6;age<12;age=age+1){
+            System.out.println(age);
+        }
     }
 
 }
