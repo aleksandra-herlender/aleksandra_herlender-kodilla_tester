@@ -14,8 +14,8 @@ public class Grades {
         return this.grades[this.size-1];
     }
 
-    public int average(){
-        return this.sum/this.size;
+    public double average(){
+        return 1.0*this.sum/this.size;
     }
 
 }
