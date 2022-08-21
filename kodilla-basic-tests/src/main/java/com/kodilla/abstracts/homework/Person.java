@@ -5,7 +5,7 @@ public class Person {
     int age;
     Job job;
 
-    public String responsibilities() {
+    public String getResponsibilities() {
         return this.job.responsibilities;
     }
 }
