@@ -9,5 +9,8 @@ public class BooksMarkt {
         System.out.println(book3.author + "," + book3.title);
         Book book4 = new Book("Twardoch", "Pokora");
         System.out.println(book4.author + "," + book4.title);
+        Book book5 = new Book("Ela", "Rok");
+        System.out.println(book5.author  + "," + book5.title);
+
     }
 }

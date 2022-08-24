@@ -12,13 +12,14 @@ public static void main(String[]args){         // [2]
         if(1>2){
         System.out.println("Niesamowite! Jeden jest większe niż dwa!!!");}
         if(5<3)
-        System.out.println("Dresden in Sachsen");
-        else
-        System.out.println("Breslau");
         if(6>=5)
         System.out.println("Blasewitz");
         else
         System.out.println("Gruna");
+
+        System.out.println("hallo");
+        System.out.println("Hallo Oma");
+        System.out.println(("hallo Opa "));
 
         String[]movies=new String[]{"Harry Potter","Lord","Forest Gump"};
         String[]books=new String[]{"Wiosna","Lato","Zima"};

@@ -9,6 +9,11 @@ public class FirstClassPlus {
 
 
 
+
+
+
+
+
         Notebook notebook = new Notebook(100, 20, 2020);
         Notebook notebook1 = new Notebook(700, 700, 2021);
         Notebook heavynotebook = new Notebook(2000, 2999, 2022);

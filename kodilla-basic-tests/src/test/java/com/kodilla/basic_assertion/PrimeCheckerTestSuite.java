@@ -5,6 +5,19 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrimeCheckerTestSuite {
+    @Test
+    public void shouldBeFalseFor14() {
+        PrimeChecker checker = new PrimeChecker();
+        boolean result = checker.isPrime(14);
+        assertFalse(result);
+    }
+
+    @Test
+    public void shouldBeTrueFor13() {
+        PrimeChecker checker = new PrimeChecker();
+        boolean result = checker.isPrime(13);
+        assertTrue(result);
+    }
 
     @Test
     public void shouldReturnFalseWhenPassingNotPrimeNumber() {
@@ -46,8 +59,6 @@ class PrimeCheckerTestSuite {
         PrimeChecker checker = new PrimeChecker();
         boolean result = checker.isPrime(-6);
         assertFalse(result);
-
     }
-
 
 }
