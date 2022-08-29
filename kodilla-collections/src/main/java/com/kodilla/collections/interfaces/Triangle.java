@@ -12,8 +12,14 @@ public class Triangle implements Shape{
         this.hypotenuse = hypotenuse;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "width=" + width +
+                ", height=" + height +
+                ", hypotenuse=" + hypotenuse +
+                '}';
+    }
 
     @Override
     public double getArea() {
