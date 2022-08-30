@@ -18,16 +18,14 @@ public class CarsListApplication {
         cars.add(vw);
 
 
-        for (Car car:cars
-             ) {
+        for (Car car : cars) {
             CarUtils.describeCar(car);
         }
 
         cars.remove(1);
         cars.remove(vw);
 
-        for (Car car:cars
-        ) {
+        for (Car car : cars) {
             CarUtils.describeCar(car);
         }
         System.out.println(cars.size());
