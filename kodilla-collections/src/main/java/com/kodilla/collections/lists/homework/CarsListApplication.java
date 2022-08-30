@@ -17,6 +17,7 @@ public class CarsListApplication {
         VW vw = new VW();
         cars.add(vw);
 
+
         for (Car car:cars
              ) {
             CarUtils.describeCar(car);
