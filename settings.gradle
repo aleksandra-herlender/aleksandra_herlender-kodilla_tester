@@ -3,4 +3,6 @@ include 'kodilla-intro'
 include 'ModulAleksandry'
 include 'kodilla-basic-tests'
 include 'kodilla-collections'
+include 'kodilla-collections-advanced'
+include 'Aufgabe'
 
