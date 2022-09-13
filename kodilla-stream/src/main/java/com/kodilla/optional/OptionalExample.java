@@ -15,11 +15,12 @@ public class OptionalExample {
 
         System.out.println(username);
         optionalUser.ifPresent(u -> System.out.println(u.getUsername()));
+
        user = null;
         optionalUser = Optional.ofNullable(user);
 
        username =
-                optionalUser.orElse(new User("", 0, 0, "")).getUsername();     // [1]
+                optionalUser.orElse(new User("domyslny", 0, 0, "")).getUsername();     // [1]
         optionalUser.ifPresent(u -> System.out.println(u.getUsername()));
         System.out.println(username);
     }
