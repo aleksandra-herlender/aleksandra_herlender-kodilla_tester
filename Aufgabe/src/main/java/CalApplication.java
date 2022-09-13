@@ -15,7 +15,6 @@ public class CalApplication {
 
 
         double add = calculator2.add(10, 20);
-        System.out.println(calculator2.add(Calculator.a, Calculator.b));
 
 
 
