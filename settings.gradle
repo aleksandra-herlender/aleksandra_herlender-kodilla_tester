@@ -6,4 +6,5 @@ include 'kodilla-collections'
 include 'kodilla-collections-advanced'
 include 'Aufgabe'
 include 'kodilla-stream'
+include 'kodilla.advanced.tests'
 
