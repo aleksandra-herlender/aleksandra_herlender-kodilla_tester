@@ -5,7 +5,7 @@ public class Application {
         Person person = new Person("Adam", 40.5, 178);
         person.printPersonInfo();
 
-
+        WeekDays day = WeekDays.Saturday;
 
 
     }

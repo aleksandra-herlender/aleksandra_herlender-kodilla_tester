@@ -15,7 +15,11 @@ public class Calculator {
     }
 
 
-    public double sub(double a, double b) {
+    public double add2(double a){
+        return add(a,2);
+    }
+
+    public  double sub(double a, double b) {
         return a-b;
     }
 
