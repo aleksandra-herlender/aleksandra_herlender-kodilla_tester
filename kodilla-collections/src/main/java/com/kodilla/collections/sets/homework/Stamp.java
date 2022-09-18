@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class Stamp {
 
-    String name;
-    double size;
-    boolean stamped;
+   private final String name;
+   private final double size;
+   private final boolean stamped;
 
     public Stamp(String name, double size, boolean stamped) {
         this.name = name;
