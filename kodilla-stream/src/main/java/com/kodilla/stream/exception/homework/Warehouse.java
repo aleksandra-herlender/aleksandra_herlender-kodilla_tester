@@ -15,7 +15,9 @@ public class Warehouse {
     }
 
     public Order getOrder(String number) throws OrderDoesntExistException {
-      List<Order> ordersFiltered =  orders.stream().filter(order -> order.getNumber()==number).collect(Collectors.toList());
+      List<Order> ordersFiltered =  orders.stream()
+              .filter(order -> order.getNumber()==number)
+              .collect(Collectors.toList());
 
       if (ordersFiltered.size()==0)
           throw new OrderDoesntExistException();
