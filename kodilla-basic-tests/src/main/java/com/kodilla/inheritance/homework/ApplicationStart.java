@@ -1,6 +1,6 @@
 package com.kodilla.inheritance.homework;
 
-public class ApplicationStart {
+public class   ApplicationStart {
     public static void main(String[] args) {
         OperatingSystem operatingSystem = new OperatingSystem(1900);
         operatingSystem.turnOn();
