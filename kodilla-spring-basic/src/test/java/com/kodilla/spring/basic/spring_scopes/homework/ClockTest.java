@@ -1,19 +1,16 @@
 package com.kodilla.spring.basic.spring_scopes.homework;
 
-import com.kodilla.spring.basic.spring_scopes.Task;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
 class ClockTest {
 
     @Test
-    public void shouldCreateDifferentClocks(){
+    public void shouldCreateDifferentClocks() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Clock firstBean = context.getBean(Clock.class);
         System.out.println(firstBean.getNow());
@@ -21,8 +18,8 @@ class ClockTest {
         System.out.println(secondBean.getNow());
         Clock thirdBean = context.getBean(Clock.class);
         Assertions.assertNotEquals(firstBean.getNow(), secondBean.getNow());
-       Assertions.assertNotEquals(secondBean.getNow(), thirdBean.getNow());
-       Assertions.assertNotEquals(firstBean.getNow(), thirdBean.getNow());
+        Assertions.assertNotEquals(secondBean.getNow(), thirdBean.getNow());
+        Assertions.assertNotEquals(firstBean.getNow(), thirdBean.getNow());
     }
 
 }
