@@ -33,11 +33,14 @@ public class Bank {
     }
 
     public double averageWithdrawal() {
-        if (this.withdrawalCount() != 0) {
-            int sum = 0;
-            for (CashMachine machine : this.machines) {
-                sum += machine.totalWithdrawal();
-            }
+
+        int count = 0;
+        int sum = 0;
+        for (CashMachine machine : this.machines) {
+            count += machine.withdrawalCount();
+            sum += machine.totalWithdrawal();
+        }
+        if (count != 0) {
             return 1.0 * sum / this.withdrawalCount();
         } else {
             return 0.0;
@@ -45,11 +48,13 @@ public class Bank {
     }
 
     public double averageIncome() {
-        if(this.incomesCount() != 0) {
-            int sum = 0;
-            for (CashMachine machine : this.machines) {
-                sum += machine.totalIncome();
-            }
+        int count = 0;
+        int sum = 0;
+        for (CashMachine machine : this.machines) {
+            count += machine.incomesCount();
+            sum += machine.totalIncome();
+        }
+        if (count != 0) {
             return 1.0 * sum / this.incomesCount();
         } else {
             return 0.0;

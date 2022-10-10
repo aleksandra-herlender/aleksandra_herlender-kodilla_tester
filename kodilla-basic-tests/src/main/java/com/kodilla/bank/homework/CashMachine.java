@@ -3,19 +3,18 @@ package com.kodilla.bank.homework;
 public class CashMachine {
 
     private int[] transactions;
-    private int size;
+
 
     public CashMachine() {
         this.transactions = new int[0];
-        this.size = 0;
     }
 
     public void addTransaction(int amount){
         if(amount != 0  && this.balance()+amount>=0) {
-            this.size++;
-            int[] newTab = new int[this.size];
+
+            int[] newTab = new int[transactions.length+1];
             System.arraycopy(transactions, 0, newTab, 0, transactions.length);
-            newTab[this.size - 1] = amount;
+            newTab[transactions.length] = amount;
             this.transactions = newTab;
         }
     }
@@ -29,7 +28,7 @@ public class CashMachine {
     }
 
     public int transactionsCount(){
-        return this.size;
+        return transactions.length;
     }
 
     public int withdrawalCount(){
