@@ -1,0 +1,7 @@
+1. Przetestowałam dodawanie, edycję i usuwanie taska.
+W załącznikach umieściłam zrzuty z zapytań wysyłanych przez stronę do naszej aplikacji (1 do 5)
+oraz zrzuty interfejsu użytkownika (1_vis, 2_vis). Na zrzutach (1_trello,2_trello)
+sprawdziłam, że taski zapisane w aplikacji można przypisać do wybranej listy w Trello.
+
+Przypisanie taska to listy w Trello odbywa się dwustopniowo. W pierwszym kroku przeglądarka wysyła zapytanie do
+endpointa w aplikacji tasks a ta następnie przesyła przetworzonego taska do Trello.
