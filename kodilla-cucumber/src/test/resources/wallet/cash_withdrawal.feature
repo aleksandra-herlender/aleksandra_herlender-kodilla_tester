@@ -1,8 +1,9 @@
 Feature: Cash withdrawal
   Scenario: Successful withdrawal
-  Given I have deposited $200 in my wallet
-  When I request $30
-  Then $30 should be dispensed
+    Given I have deposited $200 in my wallet
+    When I request $30
+    Then $30 should be dispensed
+    And the balance of my wallet should be $170
 
   Scenario: Incorrect withdrawal
     Given I have deposited $200 in my wallet

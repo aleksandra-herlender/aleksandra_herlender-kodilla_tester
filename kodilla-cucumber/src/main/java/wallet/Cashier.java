@@ -8,9 +8,17 @@ public class Cashier {
     }
 
     public void withdraw(Wallet wallet, int amount) {
-        if(amount> wallet.getBalance())
+        if (amount > wallet.getBalance()) {
             cashSlot.dispense(0);
-        else
+            cashSlot.setMessage("You don't have enough money in my wallet");
+        } else {
+            wallet.debit(amount);
             cashSlot.dispense(amount);
+        }
+
+    }
+
+    public void checkBalance(Wallet wallet) {
+        cashSlot.setMessage("Your balance is $"+wallet.getBalance());
     }
 }
