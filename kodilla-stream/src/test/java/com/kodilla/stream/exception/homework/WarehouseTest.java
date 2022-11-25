@@ -21,12 +21,8 @@ class WarehouseTest {
     }
 
     @Test
-    public void shouldFindCorrectOrderWhenSearchingForCorrectOrderNumber(){
-        try {
+    public void shouldFindCorrectOrderWhenSearchingForCorrectOrderNumber() throws OrderDoesntExistException{
             assertEquals(new Order("o1"),warehouse.getOrder("o1"));
-        } catch (OrderDoesntExistException e) {
-            throw new RuntimeException(e);
-        }
     }
 
 }
